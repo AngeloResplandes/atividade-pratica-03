@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -5,29 +7,207 @@
 body {
     margin: 0;
     padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #444 #1a1a1a;
 }
 
 .intro {
     width: 100%;
     height: 100dvh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
-    background-image: url("../images/Background_Intro.png");
+    background-image: url("../images/Background_Intro.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.projects {
-    width: 100%;
-    height: 100dvh;
+.apresentation {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.avatar {
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info h3 {
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%;
+    color: #C0C4CE;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.info h3 strong {
+    color: #E3646E;
+}
+
+.info h1 {
+    font-family: "Asap", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 120%;
+    color: #E2E4E9;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    color: #878EA1;
+    margin: 0;
+}
+
+.stacks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 20px;
+    margin-bottom: 100px;
+}
+
+.box-stack {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #292C34;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.icon-stack {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 8px;
+}
+
+.icon-stack--svg {
+    width: 24px;
+    height: 24px;
+}
+
+.github {
+    fill: #C0C4CE;
+}
+
+.html {
+    fill: #E3646E;
+}
+
+.css {
+    fill: #3996DB;
+}
+
+.javascript {
+    fill: #EABD5F;
+}
+
+.react {
+    fill: #3996DB;
+}
+
+.nodejs {
+    fill: #82BC4F;
+}
+
+.name-stack {
+    display: flex;
+    align-items: center;
+}
+
+.name-stack p {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    color: #C0C4CE;
+}
+
+.down-button {
+    width: 32px;
+    height: 32px;
+}
+
+.down-button button {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.arrow {
+    fill: #878EA1;
+    width: 32px;
+    height: 32px;
+}
+
+.arrow:hover {
+    fill: #3996DB;
+    cursor: pointer;
+}
+
+.projects {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
-    background: #16181D;
+    background-color: #16181D;
+}
+
+.section-struct--title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-struct--content {
+    max-width: 1040px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box-project {
+    max-width: 330px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
 }
 
 .services {
@@ -37,7 +217,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    background: #0D0E11;
+    background-color: #0D0E11;
 }
 
 .contact {
@@ -47,8 +227,28 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    background-image: url("../images/Background_Contacts.png");
+    background-image: url("../images/Background_Contacts.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 4px;
+    border: 1px solid #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #666;
 }
