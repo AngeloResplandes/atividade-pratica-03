@@ -432,8 +432,7 @@ body {
 
 @media(max-width: 692px) {
     .avatar{
-        margin-top: 20px;
-        margin-botton: 10px;
+        margin: 0;
     }
     
     .apresentation {
